@@ -1,6 +1,7 @@
 package mobi.qishui.sodautils.system;
 
 import android.content.Context;
+import android.content.Intent;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.text.TextUtils;
@@ -39,5 +40,20 @@ public class PackageUtil {
         }
 
         return false;
+    }
+
+    /**
+     * Launch other App's activity
+     *
+     * @param context     caller activity
+     * @param packageName package to be launched
+     */
+    public void launchApp(Context context, String packageName) {
+        if (!isPackageInstalled(context, packageName)) {
+            throw new IllegalArgumentException("Package not installed:" + packageName);
+        }
+
+        Intent launchIntent = context.getPackageManager().getLaunchIntentForPackage(packageName);
+        context.startActivity(launchIntent);
     }
 }

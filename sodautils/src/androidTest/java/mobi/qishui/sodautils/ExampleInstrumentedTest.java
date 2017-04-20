@@ -38,5 +38,7 @@ public class ExampleInstrumentedTest {
         } catch (IllegalArgumentException e) {
             assertEquals(e.getMessage(), "package name can't be empty");
         }
+
+        util.launchApp(InstrumentationRegistry.getTargetContext(), "com.tencent.mm");
     }
 }

@@ -1,2 +1,2 @@
 # sdandroidutils
-my own Android utils
+My own Android utils
