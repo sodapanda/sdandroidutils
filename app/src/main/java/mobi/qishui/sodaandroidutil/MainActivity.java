@@ -1,16 +1,32 @@
 package mobi.qishui.sodaandroidutil;
 
-import android.app.Activity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 
-public class MainActivity extends Activity {
+import mobi.qishui.sodautils.phone.PhoneUtils;
+import mobi.qishui.sodautils.ui.SodBaseAct;
+
+public class MainActivity extends SodBaseAct {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        initViews();
     }
 
-    public MainActivity() {
+    private void initViews() {
+        Button btn = (Button) findViewById(R.id.btn_call);
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                PhoneUtils phoneUtils = new PhoneUtils();
+                phoneUtils.directCall(MainActivity.this, MainActivity.this, "18668240271");
+            }
+        });
     }
+
+
 }
