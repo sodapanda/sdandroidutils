@@ -4,6 +4,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.trello.navi.Event;
+
 import mobi.qishui.sodautils.phone.PhoneUtils;
 import mobi.qishui.sodautils.ui.SodBaseAct;
 
