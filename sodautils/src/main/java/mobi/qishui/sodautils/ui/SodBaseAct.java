@@ -15,6 +15,7 @@ import com.trello.navi.internal.NaviEmitter;
 
 /**
  * Created by wangxiao on 2017/4/20.
+ * Base Activity of other activities
  */
 
 public class SodBaseAct extends Activity implements NaviComponent {

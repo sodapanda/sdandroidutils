@@ -8,6 +8,11 @@ import mobi.qishui.sodautils.phone.PhoneUtils;
 import mobi.qishui.sodautils.ui.SodBaseAct;
 
 public class MainActivity extends SodBaseAct {
+    private PhoneUtils phoneUtils = new PhoneUtils(this);
+
+    public MainActivity() {
+        phoneUtils.watch(this);
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,7 +27,6 @@ public class MainActivity extends SodBaseAct {
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                PhoneUtils phoneUtils = new PhoneUtils();
                 phoneUtils.directCall(MainActivity.this, MainActivity.this, "18668240271");
             }
         });
