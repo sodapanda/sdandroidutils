@@ -32,7 +32,7 @@ public class PhoneUtils implements LifeCycleWatcher {
     }
 
     @Override
-    public <T> Subscription watch(NaviComponent component) {
+    public Subscription watch(NaviComponent component) {
         if (component == null) {
             throw new IllegalArgumentException("component and events can't be null");
         }
@@ -76,11 +76,10 @@ public class PhoneUtils implements LifeCycleWatcher {
     /**
      * make a call not open a dialer
      *
-     * @param context   context
-     * @param component component
-     * @param phoneNum  number to call
+     * @param context  context
+     * @param phoneNum number to call
      */
-    public void directCall(Activity context, NaviComponent component, String phoneNum) {
+    public void directCall(Activity context, String phoneNum) {
         if (context == null || TextUtils.isEmpty(phoneNum)) {
             throw new IllegalArgumentException("context and number can't be null");
         }

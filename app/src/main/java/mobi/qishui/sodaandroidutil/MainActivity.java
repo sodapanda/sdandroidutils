@@ -4,8 +4,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import com.trello.navi.Event;
-
 import mobi.qishui.sodautils.phone.PhoneUtils;
 import mobi.qishui.sodautils.ui.SodBaseAct;
 
@@ -29,7 +27,7 @@ public class MainActivity extends SodBaseAct {
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                phoneUtils.directCall(MainActivity.this, MainActivity.this, "18668240271");
+                phoneUtils.directCall(MainActivity.this, "18668240271");
             }
         });
     }
