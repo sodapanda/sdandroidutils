@@ -1,1 +1,1 @@
-include ':app', ':sodautils'
+include ':app', ':sodautils', ':sodplugin-processer', ':sodanno'

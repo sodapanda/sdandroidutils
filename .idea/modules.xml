@@ -4,7 +4,9 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/sdandroidutils.iml" filepath="$PROJECT_DIR$/sdandroidutils.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sodanno/sodanno.iml" filepath="$PROJECT_DIR$/sodanno/sodanno.iml" />
       <module fileurl="file://$PROJECT_DIR$/sodautils/sodautils.iml" filepath="$PROJECT_DIR$/sodautils/sodautils.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sodplugin-processer/sodplugin-processer.iml" filepath="$PROJECT_DIR$/sodplugin-processer/sodplugin-processer.iml" />
     </modules>
   </component>
 </project>

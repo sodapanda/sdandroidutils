@@ -1,6 +1,7 @@
 package mobi.qishui.sodaandroidutil;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
@@ -15,6 +16,11 @@ public class MainActivity extends SodBaseAct {
         setContentView(R.layout.activity_main);
 
         initViews();
+
+        Demo demo = new Demo();
+        demo.name = "good";
+        Log.i("test", "name " + demo.name);
+
     }
 
     private void initViews() {
